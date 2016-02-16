@@ -3,38 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Website Title</title>
+        <title>Todolist.js</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-         <!-- Optional theme -->
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
 
-        <!-- Add your site or application content here -->
-        <div class="nav navbar-inverse navbar-fixed-top">
-           <div class="container">
-             <div class="navbar-header">
-
-             </div>
+      <section class="section">
+         <div class="container">
+            <div class="heading">
+               <h1 class="title">Todolist.js</h1>
+               <h4>A simple todolist made <strong>just for fun!</strong></h4>
+            </div>
+            <hr>
+            <div class="control is-grouped">
+              <input type="text" class="input" placeholder="Write something!">
+              <button class="button is-success" name="button">Add new Todo</button>
            </div>
-        </div>
-
-        <div class="container col-md-offset-3">
-           <div class="todo col-sm-7">
-             <div class="row">
-                   <div class="form-inline col-md-offset-3">
-                     <input type="text" class="form-control" placeholder="Add something to do!">
-                     <button type="button" class="btn btn-success glyphicon glyphicon-plus
-   " name="button"></button>
-                  </div>
-             </div>
-           </div>
-        </div>
+           <hr>
+         </div>
+      </section>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -45,8 +35,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="scripts/app.js"></script>
     </body>
 </html>
