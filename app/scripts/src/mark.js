@@ -1,9 +1,17 @@
-var adiciona = document.getElementById('add');
-var texto = document.getElementById('texto');
-var tabela = document.getElementById('tabela');
+var add = document.querySelector("#add");
+var remove = document.querySelector("#delete");
 
+add.addEventListener('click', function(){
+   var novoTodo = "<tr> " +
+                     "<td>" + texto.value +
+                        "<a id='delete' class='button is-danger is-outlined'>" +
+                           "<i class='remove fa fa-times'></i>"+
+                        "</a>"+
+                     "</td>" +
+                  "</tr>";
 
-adiciona.addEventListener('click', function(){
-      tabela.appendChild('<tr><td>'+ texto.value +'<a class="button is-danger is-outlined"><i class="fa fa-times"></i>Delete</a></td></tr>')
-      texto.value = '';
-}, false);
+   var tabela = document.querySelector("#tabela");
+   tabela.innerHTML = tabela.innerHTML + novoTodo;
+
+   texto.value = '';
+})
