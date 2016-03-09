@@ -17,5 +17,5 @@ add.addEventListener('click', function(){
 });
 
 remove.addEventListener('click',function(){
-   this.remove('.wait');
+   this.remove('wait');
 });
